@@ -47,7 +47,10 @@ while True:
         
     elif ans == "Stats":
         answers_attempts = stats.correct_vs_attempts()
+        average_time = stats.average_time()
+        
         print(f"You got {answers_attempts[0]} out of {answers_attempts[1]} correct.")
+        print(f"You took an average of {average_time()}.")
 
     elif ans == "Stop" or ans == "Esc" or ans == "Exit":
         connection.commit()
